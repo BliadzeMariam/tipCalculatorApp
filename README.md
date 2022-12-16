@@ -1,5 +1,3 @@
-Frontend Mentor - Tip calculator app
-
 The app is able to:
 
     • View the optimal layout for the app depending on their device's screen size
