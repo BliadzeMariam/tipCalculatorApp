@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tip calculator app</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- logo section -->
+  <div class="logo">
+    <img src="./images/logo.svg" alt="Main Logo" class="header-logo" />
+  </div>
+  <!-- /.logo section ends -->
+  <!-- container section -->
+  <div class="container">
+    <!-- card section -->
+    <div class="card">
+      <!-- left side section -->
+      <!-- here you must write information about calculation-->
+      <div class="left-side">
+        <!-- you must write how much of bills is to pay-->
+        <div class="bill-numbers">
+          <label for="bill" class="input-header">Bill</label>
+          <input type="number" id="bill" class="input-all bill-input" name="bill" placeholder="0" min="0" max="9999"
+            required />
+        </div>
+        <!-- you must choose one of tips or write custom number-->
+        <div class="tips-section">
+          <label for="tips" class="input-header">Select Tip %</label>
+          <div class="tips-containter all-tips">
+            <!-- <input type="button" id="btn-5" name="button" value="5%" class="tips" />
+            <input type="button" id="btn-10" name="button" value="10%" class="tips" />
+            <input type="button" id="btn-15" name="button" value="15%" class="tips active-tip" />
+            <input type="button" id="btn-25" name="button" value="25%" class="tips" />
+            <input type="button" id="btn-50" name="button" value="50%" class="tips" /> -->
+
+            <div class="tips button">5%</div>
+            <div class="tips button">10%</div>
+            <div class="tips button active-tip">15%</div>
+            <div class="tips button">20%</div>
+            <div class="tips button">25%</div>
+            <div id="tip-custom"><input type="number" id="custom" name="button" placeholder="Custom"
+                class="tip-custom" />
+            </div>
+
+          </div>
+        </div>
+        <!-- you must write how many of guest want to pay, REQUIRED! -->
+
+        <div class="people-section">
+          <div class="people-lable">
+            <label for="people" class="input-header ">Number of People</label>
+            <label for="" class="error">Can't be Zero</label>
+          </div>
+
+          <input type="number" id="people" class="input-all people-input" name="people" placeholder="0" min="0"
+            max="9999" required />
+        </div>
+      </div>
+      <!-- /.left side section ends -->
+      <!-- right side starts -->
+      <!-- here you will see calculations -->
+      <div class="right-side">
+        <div class="right-up-side">
+          <div class="tip-amount">
+            <h4 class="main">
+              Tip Amount
+              <span><br />/ person</span>
+            </h4>
+          </div>
+          <h2 class="total-tips">$0.00</h2>
+        </div>
+
+        <div class="right-down-side">
+          <div class="total-amount">
+            <h4 class="main">
+              Total
+              <span><br />/ person</span>
+            </h4>
+          </div>
+          <h2 class="total">$0.00</h2>
+        </div>
+        <div class="reset">RESET</div>
+      </div>
+    </div>
+    <!-- /.card section ends -->
+  </div>
+  <!-- /.container section ends -->
+  <script src="app.js"></script>
+</body>
+
+</html>

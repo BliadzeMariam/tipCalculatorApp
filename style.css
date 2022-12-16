@@ -1,0 +1,356 @@
+*,
+*::before,
+*::after {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Reset for input 
+===================*/
+input {
+    outline: none;
+    cursor: pointer;
+}
+
+.main-section input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Body
+=================== */
+body {
+    background-color: #c5e4e7;
+    overflow-x: hidden;
+    font-family: "Space Mono", monospace;
+}
+
+/*  Logo
+===================== */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 40px 0;
+}
+
+/* Container 
+===================== */
+.container {
+    background-color: #c5e4e7;
+    height: 100vh;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Card section
+===================== */
+.card {
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+    border-radius: 25px;
+    padding: 32px 24px;
+    gap: 48px;
+}
+
+/* Left side
+===================== */
+.left-side {
+    width: 100%;
+}
+
+.bill-numbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+/* for all left side header texts 
+===================== */
+.input-header {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #5E7A7D;
+    margin: 6px 0;
+}
+
+/* for all left side REQUIRED inputs[type="text"]
+===================== */
+.input-all {
+    height: 48px;
+    width: 100%;
+    padding: 6px 17px;
+    text-align: right;
+    border-radius: 5px;
+    background: #F3F9FA;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: right;
+    color: #00474b;
+}
+
+.input-all:focus {
+    background: #F3F9FA;
+    border: 2px solid #26C2AE;
+    border-radius: 5px;
+}
+
+.bill-numbers label::before {
+    content: url('./images/icon-dollar.svg');
+    position: absolute;
+    left: 19px;
+    top: 50px;
+}
+
+
+/* Tips section 
+===================== */
+
+.tips-section {
+    margin-top: 32px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5e7a7d;
+}
+
+.tips-containter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 0.9rem;
+    margin-top: 16px;
+
+}
+
+.tips,
+#tip-custom {
+    height: 48px;
+    width: 46%;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: right;
+    color: #FFFFFF;
+    padding: 6px 0;
+}
+
+#tip-custom {
+    padding: 0;
+}
+
+.tips {
+    background: #00474b;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.tips:hover {
+    background: #9FE8DF;
+    border-radius: 5px;
+    color: #00474b;
+}
+
+.tips-containter .active-tip {
+    background: #26c2ae;
+    border-radius: 5px;
+    color: #00474b;
+}
+
+
+#tip-custom input {
+    background: #f3f9fa;
+    border-radius: 5px;
+    height: 48px;
+    width: 100%;
+    padding: 6px 11px;
+    font-family: "Space Mono";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #547878;
+    text-align: right;
+
+}
+
+#tip-custom input:focus {
+    background: #F3F9FA;
+    border: 2px solid #26C2AE;
+    border-radius: 5px;
+    text-align: right;
+
+}
+
+/* People quantity section 
+===================== */
+.people-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-top: 32px;
+}
+
+.people-lable {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error {
+    color: red;
+    display: none;
+}
+
+.people-section label::before {
+    content: url('./images/icon-person.svg');
+    position: absolute;
+    left: 19px;
+    top: 50px;
+}
+
+/* Right side 
+======================*/
+
+.right-side {
+    height: 257px;
+    width: 100%;
+    background: #00474B;
+    border-radius: 15px;
+    padding: 40px;
+    margin-top: 32px;
+}
+
+.right-up-side,
+.right-down-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-up-side {
+    margin-bottom: 25px;
+}
+
+.right-down-side {
+    margin-bottom: 30px;
+}
+
+.tip-amount,
+.total-amount {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 700;
+    flex-wrap: wrap;
+}
+
+.main {
+    font-weight: 700;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.main span {
+    font-size: 13px;
+    line-height: 19px;
+    color: #7F9D9F;
+}
+
+.total-tips,
+.total {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 47px;
+    text-align: right;
+    letter-spacing: -0.666667px;
+    color: #26C2AE;
+}
+
+.reset {
+    height: 48px;
+    width: 100%;
+    background: #26C2AE;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #00474B;
+    margin-bottom: 32px;
+    cursor: pointer;
+    padding: 9px 0;
+}
+
+.reset:hover {
+    background: #9FE8DF;
+}
+
+@media(min-width: 900px) {
+
+    .logo {
+        margin-top: 160px;
+        margin-bottom: 80px;
+
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        height: 481px;
+        width: 920px;
+        padding: 32px 48px;
+    }
+
+
+    #bill {
+        width: 100%;
+    }
+
+    .tips,
+    #tip-custom {
+        height: 48px;
+        width: 30%;
+    }
+
+    .left-side {
+        width: 46%;
+    }
+
+    .right-side {
+        height: 417px;
+        width: 413px;
+        margin-top: 0;
+        padding: 40px;
+    }
+
+    .reset {
+        margin-top: 162px;
+    }
+}
